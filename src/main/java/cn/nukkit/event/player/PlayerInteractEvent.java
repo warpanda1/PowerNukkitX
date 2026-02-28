@@ -1,6 +1,7 @@
 package cn.nukkit.event.player;
 
 import cn.nukkit.Player;
+import cn.nukkit.Server;
 import cn.nukkit.block.Block;
 import cn.nukkit.event.Cancellable;
 import cn.nukkit.event.HandlerList;
@@ -44,6 +45,8 @@ public class PlayerInteractEvent extends PlayerEvent implements Cancellable {
         this.item = item;
         this.blockFace = face;
         this.action = action;
+
+        //call the code here to add villager stuff
     }
 
     public Action getAction() {
